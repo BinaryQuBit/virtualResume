@@ -1,5 +1,51 @@
-body {
-    margin: 0;
-    background: pink;
-    text-align: center;
+body{
+  margin: 0;
+}
+.container {
+  position: relative;
+  height: auto; /* Remove the fixed height */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+.scroll-image {
+  position: relative;
+  top: 0;
+  width: 100%; /* Set the image width to 100% to fit within the container */
+  height: auto; /* Let the image maintain its aspect ratio */
+}
+
+.profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  display: flex; /* Add flex display to align items horizontally */
+  align-items: center; /* Center items vertically within the flex container */
+}
+
+.profile-photo {
+    max-width: 40%; /* Set the maximum width of the profile photo */
+    height: auto; /* Let the height adjust automatically */
+    border-radius: 50%; /* Apply a circular border */
+    margin-right: 20px; /* Add margin between the profile photo and description */
+}
+
+.profile-description {
+  text-align: left; /* Align the name and description to the left */
+}
+
+.profile-description h2 {
+  font-size: 4vw; /* Set the font size for the name using viewport width */
+  margin-bottom: 10px; /* Add margin below the name */
+  font-weight: 40;
+  color: white; /* Set the font color to white */
+  font-family: Impact, sans-serif; /* Set the font family to Impact with fallback to sans-serif */
+}
+
+
+.profile-description p {
+  font-size: 30px; /* Set the font size for the description */
+  color: white;
 }
