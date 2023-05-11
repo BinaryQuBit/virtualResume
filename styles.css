@@ -46,6 +46,8 @@ body{
 
 
 .profile-description p {
-  font-size: 30px; /* Set the font size for the description */
-  color: white;
+  font-size: 3vw; /* Set the font size for the description */
+  margin-bottom: 10px; /* Add margin below the name */
+  font-weight: 40;
+  color: white; /* Set the font color to white */
 }
