@@ -37,17 +37,15 @@ body{
 }
 
 .profile-description h2 {
-  font-size: 4vw; /* Set the font size for the name using viewport width */
+  font-size: 40px; /* Set the font size for the name using viewport width */
   margin-bottom: 10px; /* Add margin below the name */
-  font-weight: 40;
   color: white; /* Set the font color to white */
   font-family: Impact, sans-serif; /* Set the font family to Impact with fallback to sans-serif */
 }
 
 
 .profile-description p {
-  font-size: 3vw; /* Set the font size for the description */
+  font-size: 30px; /* Set the font size for the description */
   margin-bottom: 10px; /* Add margin below the name */
-  font-weight: 40;
   color: white; /* Set the font color to white */
 }
