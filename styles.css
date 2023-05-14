@@ -21,31 +21,48 @@ body{
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
-  display: flex; /* Add flex display to align items horizontally */
-  align-items: center; /* Center items vertically within the flex container */
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Change the flex direction to column */
 }
 
 .profile-photo {
-    max-width: 40%; /* Set the maximum width of the profile photo */
-    height: auto; /* Let the height adjust automatically */
-    border-radius: 50%; /* Apply a circular border */
-    margin-right: 20px; /* Add margin between the profile photo and description */
+  max-width: 40%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Add margin below the profile photo */
 }
 
 .profile-description {
-  text-align: left; /* Align the name and description to the left */
+  text-align: center; /* Align the description text to the center */
 }
 
 .profile-description h2 {
-  font-size: 40px; /* Set the font size for the name using viewport width */
-  margin-bottom: 10px; /* Add margin below the name */
-  color: white; /* Set the font color to white */
-  font-family: Impact, sans-serif; /* Set the font family to Impact with fallback to sans-serif */
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Impact, sans-serif;
+  font-weight: 400; /* Reduce the font weight for a lighter stroke */
 }
 
-
 .profile-description p {
-  font-size: 30px; /* Set the font size for the description */
-  margin-bottom: 10px; /* Add margin below the name */
-  color: white; /* Set the font color to white */
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+  max-width: 400px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 10000px) {
+  .profile {
+    flex-direction: row; /* Change the flex direction back to row */
+    justify-content: center; /* Center the items horizontally */
+    text-align: left; /* Align the text to the left */
+  }
+
+  .profile-photo {
+    max-width: 100px; /* Adjust the profile photo width for smaller screens */
+    margin-bottom: 0; /* Remove the margin below the profile photo */
+    margin-right: 20px; /* Add margin between the profile photo and description */
+  }
 }
