@@ -1,22 +1,23 @@
-body{
+body {
   margin: 0;
 }
+
 .container {
   position: relative;
-  height: auto; /* Remove the fixed height */
-  overflow-y: hidden; /* Disable vertical scrolling */
+  height: auto;
+  overflow-y: hidden;
 }
 
 .scroll-image {
   position: relative;
   top: 0;
-  width: 100%; /* Set the image width to 100% to fit within the container */
-  height: auto; /* Let the image maintain its aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .profile {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -27,7 +28,7 @@ body{
 }
 
 .profile-photo {
-  max-width: 40%;
+  max-width: 70%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 20px; /* Add margin below the profile photo */
