@@ -23,7 +23,7 @@ const innerBoxStyle = computed(() => ({
     width: props.animateStart ? props.innerBoxWidth : '0%',
     transition: 'width 2s ease',
     height: '30px',
-    backgroundColor: '#1484b4',
+    backgroundColor: '#007769',
     display: 'flex',
     alignItems: 'center'
 }));
@@ -34,6 +34,7 @@ const innerBoxStyle = computed(() => ({
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    max-width: 100%;
 }
 
 .box {

@@ -1,37 +1,36 @@
 <template>
-    <div class="bg">
-        <div class="leftContainer" :class="{ 'visible': isSidebarVisible }">
-            <ItemTitle :iconSrc="BusinessmanIcon" titleText="CONTACT" />
-            <ItemDescription :iconSrc="LocationIcon" titleText="Calgary, AB., Canada" />
-            <ItemDescription :iconSrc="Email" titleText="amandippadda@outlook.com" isEmail />
-            <ItemDescription :iconSrc="LinkedIn" titleText="LinkedIn" isLinkedIn />
-            <ItemDescription :iconSrc="Github" titleText="Github" isGitHub />
-            <ItemTitle :iconSrc="Computer" titleText="TECH SKILLS" />
-            <BoxFill typeLang="C/C++" innerBoxWidth="82%" :animateStart="animateStartC" />
-            <BoxFill typeLang="Python" innerBoxWidth="80%" :animateStart="animateStartPython" />
-            <BoxFill typeLang="Java" innerBoxWidth="75%" :animateStart="animateStartJava" />
-            <BoxFill typeLang="Javascript" innerBoxWidth="80%" :animateStart="animateStartJavascript" />
-            <BoxFill typeLang="PHP" innerBoxWidth="60%" :animateStart="animateStartPHP" />
-            <ItemTitle :iconSrc="SoftSkills" titleText="SOFT SKILLS" />
-            <BoxFill typeLang="Communication" innerBoxWidth="80%" :animateStart="animateStartCommunication" />
-            <BoxFill typeLang="Teamwork & Collaboration" innerBoxWidth="85%" :animateStart="animateStartTeamwork" />
-            <BoxFill typeLang="Problem-Solving" innerBoxWidth="85%" :animateStart="animateStartProblem" />
-            <BoxFill typeLang="Adaptability and Flexibility" innerBoxWidth="80%"
-                :animateStart="animateStartAdaptability" />
-            <BoxFill typeLang="Leadership" innerBoxWidth="90%" :animateStart="animateStartLeadership" />
+    <div class="leftContainer" :class="{ 'visible': isSidebarVisible }">
+            <ItemTitle :iconSrc="'fa-solid fa-user-tie'" titleText="CONTACT" />
+            <ItemDescription :iconSrc="'fa-solid fa-location-dot'" titleText="Calgary, AB. Canada" isLocation class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-solid fa-envelope'" titleText="amandippadda@outlook.com" isEmail class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-brands fa-linkedin'" titleText="LinkedIn" isLinkedIn class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-brands fa-github'" titleText="Github" isGitHub class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-solid fa-code'" titleText="Projects" isProject class="itemDescription"/>
+
+            <ItemTitle :iconSrc="'fa-solid fa-laptop-code'" titleText="TECH SKILLS" />
+            <BoxFill typeLang="C/C++" innerBoxWidth="82%" :animateStart="animateStartC" class="itemDescription"/>
+            <BoxFill typeLang="Python" innerBoxWidth="80%" :animateStart="animateStartPython" class="itemDescription"/>
+            <BoxFill typeLang="Java" innerBoxWidth="75%" :animateStart="animateStartJava" class="itemDescription"/>
+            <BoxFill typeLang="Javascript" innerBoxWidth="80%" :animateStart="animateStartJavascript" class="itemDescription"/>
+            <BoxFill typeLang="PHP" innerBoxWidth="60%" :animateStart="animateStartPHP" class="itemDescription"/>
+
+            <ItemTitle :iconSrc="'fa-solid fa-person-chalkboard'" titleText="SOFT SKILLS" />
+            <BoxFill typeLang="Communication" innerBoxWidth="80%" :animateStart="animateStartCommunication" class="itemDescription"/>
+            <BoxFill typeLang="Teamwork & Collaboration" innerBoxWidth="85%" :animateStart="animateStartTeamwork" class="itemDescription"/>
+            <BoxFill typeLang="Problem-Solving" innerBoxWidth="85%" :animateStart="animateStartProblem" class="itemDescription"/>
+            <BoxFill typeLang="Adaptability and Flexibility" innerBoxWidth="87%"
+                :animateStart="animateStartAdaptability" class="itemDescription"/>
+            <BoxFill typeLang="Leadership" innerBoxWidth="90%" :animateStart="animateStartLeadership" class="itemDescription"/>
+
+            <ItemTitle :iconSrc="'fa-solid fa-face-smile'" titleText="HOBBIES" class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-solid fa-futbol'" titleText="Soccer" />
+            <ItemDescription :iconSrc="'fa-solid fa-chess-pawn'" titleText="Chess" class="itemDescription"/>
+            <ItemDescription :iconSrc="'fa-solid fa-film'" titleText="Movies" class="itemDescription"/>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import BusinessmanIcon from '../../assets/businessmanIcon.svg';
-import LocationIcon from "../../assets/locationIcon.svg";
-import Email from "../../assets/email.svg";
-import LinkedIn from "../../assets/linkedinIcon.svg"
-import Github from "../../assets/github.svg"
-import Computer from "../../assets/computer.svg"
-import SoftSkills from "../../assets/softSkills.svg"
 import ItemTitle from './ItemTitle.vue';
 import ItemDescription from './ItemDescription.vue';
 import BoxFill from './BoxFill.vue';
@@ -97,20 +96,37 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.bg {
-    height: 100vh;
-    background-color: white;
-}
 
 .leftContainer {
     position: absolute;
-    left: -370px;
-    width: 350px;
-    background-color: #b7b7b8;
+    left: -350px;
+    width: 300px;
     transition: left 0.5s ease;
 }
 
 .leftContainer.visible {
-    left: 20px;
+    left: 0px;
+    right: 0px;
 }
+
+@media (max-width: 310px) {
+    .itemDescription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .leftContainer {
+        position: none;
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
+    .leftContainer.visible {
+        left: 0px;
+        right: 0px;
+    }
+}
+
 </style>
