@@ -1,6 +1,3 @@
 node_modules
 creds.json
 dist
-docker-compose.yml
-/script
-Dockerfile

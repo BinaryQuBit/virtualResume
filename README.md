@@ -2,6 +2,10 @@
     <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
 </div>
 
+<div align="center" style="width: 100%">
+    Check out my <a href="https://amanpadda.uk.to/">Resume</a>
+</div>
+
 <div style="width: 100%;">
     <a href="#"><img src="./readmeSetup/techStack.svg" style="width: 100%"></a>
 </div>
@@ -33,13 +37,14 @@
   <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
   <img src="https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
 </p>
 
 <h2></h2>
 
 <h3 align="center">Databases</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white" alt="Firebase">
 </p>
 
 <h2></h2>

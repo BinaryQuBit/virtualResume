@@ -2,7 +2,7 @@
     <div class="linkMainContainer">
         <div class="darkMode" @click="toggleDarkMode">
             <i :class="globalState?.darkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
-            <p>{{ globalState?.darkMode ? 'Light Mode' : 'Dark Mode' }}</p>
+            <p>{{ globalState?.darkMode ? "Light Mode" : "Dark Mode" }}</p>
         </div>
         <div class="share" @click="shareContent">
             <i class="fas fa-share-alt"></i>
@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-import { inject } from 'vue';
-import type { GlobalState } from '../../types';
-const globalState = inject<GlobalState>('globalState');
+import { inject } from "vue";
+import type { GlobalState } from "../../types";
+const globalState = inject<GlobalState>("globalState");
 
 const toggleDarkMode = () => {
     if (globalState) {
@@ -32,19 +32,19 @@ const shareContent = async () => {
             await navigator.share({
                 title: "Aman Padda's Resume",
                 text: "Check out Aman Padda's Resume",
-                url: window.location.href
+                url: window.location.href,
             });
         } catch (error) {
-            console.error('Error sharing the content', error);
+            console.error("Error sharing the content", error);
         }
     } else {
-        alert('Web Share API is not supported in your browser.');
+        alert("Web Share API is not supported in your browser.");
     }
 };
 
 const downloadPdf = () => {
-    const link = document.createElement('a');
-    link.href = 'Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "Resume.pdf";
     link.download = "AmanPaddaResume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -90,5 +90,14 @@ const downloadPdf = () => {
 .share:hover p,
 .download:hover p {
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+
+    .darkMode,
+    .share,
+    .download {
+        padding-left: 0px;
+    }
 }
 </style>

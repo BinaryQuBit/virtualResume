@@ -7,7 +7,7 @@ const visitorCount = ref(0);
 
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:84/api/visit', { method: 'GET', credentials: 'include' });
+    const response = await fetch('/api/visit', { method: 'GET', credentials: 'include' });
     const data = await response.json();
     visitorCount.value = data.visitorCount;
   } catch (error) {
