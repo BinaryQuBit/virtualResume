@@ -1,7 +1,7 @@
 <template>
     <div class="mainContainer">
         <div class="sidebar">
-            <Sidebar />
+            <Sidebar :visitorCount="visitorCount" />
         </div>
         <div :class="['itemsList', { 'dark-mode': globalState?.darkMode }]">
             <div class="blocking">
@@ -20,18 +20,19 @@
 </template>
 
 <script setup lang="ts">
-import { inject, watchEffect } from 'vue';
+import { inject } from 'vue';
 import Sidebar from "./Sidebar/Sidebar.vue";
 import ResumeContainer from "./Resume/ResumeContainer.vue";
 import LinksContainer from "./Links/LinksContainer.vue";
 import type { GlobalState } from "../types";
 const globalState = inject<GlobalState>('globalState');
 
-if (globalState) {
-    watchEffect(() => {
-        console.log(globalState.darkMode);
-    });
-}
+import { defineProps } from 'vue';
+
+defineProps({
+    visitorCount: Number
+});
+
 </script>
 
 

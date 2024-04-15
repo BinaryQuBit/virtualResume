@@ -1,13 +1,26 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 import HeaderContainer from './components/HeaderContainer.vue';
 import BodyContainer from './components/BodyContainer.vue';
 
+const visitorCount = ref(0);
+
+onMounted(async () => {
+  try {
+    const response = await fetch('http://localhost:84/api/visit', { method: 'GET', credentials: 'include' });
+    const data = await response.json();
+    visitorCount.value = data.visitorCount;
+  } catch (error) {
+    console.error('Error fetching visitor count:', error);
+  }
+});
 </script>
+
 
 <template>
   <div>
     <HeaderContainer />
-    <BodyContainer />
+    <BodyContainer :visitorCount="visitorCount" />
   </div>
 </template>
 
@@ -31,5 +44,4 @@ import BodyContainer from './components/BodyContainer.vue';
   --container-color: #005149;
   --sidebar-color: #005149;
 }
-
 </style>

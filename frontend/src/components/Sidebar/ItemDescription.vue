@@ -28,19 +28,19 @@
         </template>
         <template v-else-if="isProject">
             <a :href="`#`" class="itemsIcon" target="_blank" rel="noopener noreferrer">
-                <i :class="iconSrc" class="linked"/>
+                <i :class="iconSrc" class="linked" />
             </a>
-            <a :href="`#`" class="itemsDescription link" target="_blank"
-                rel="noopener noreferrer">
+            <a :href="`#`" class="itemsDescription link" target="_blank" rel="noopener noreferrer">
                 {{ titleText }}
             </a>
         </template>
         <template v-else-if="isLocation">
-            <a :href="`https://www.google.ca/maps/place/Calgary,+AB/@51.0276233,-114.087835,10z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu`" class="itemsIcon" target="_blank" rel="noopener noreferrer">
+            <a :href="`https://www.google.ca/maps/place/Calgary,+AB/@51.0276233,-114.087835,10z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu`"
+                class="itemsIcon" target="_blank" rel="noopener noreferrer">
                 <i :class="iconSrc" class="linked" />
             </a>
-            <a :href="`https://www.google.ca/maps/place/Calgary,+AB/@51.0276233,-114.087835,10z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu`" class="itemsDescription link" target="_blank"
-                rel="noopener noreferrer">
+            <a :href="`https://www.google.ca/maps/place/Calgary,+AB/@51.0276233,-114.087835,10z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu`"
+                class="itemsDescription link" target="_blank" rel="noopener noreferrer">
                 {{ titleText }}
             </a>
         </template>
@@ -92,7 +92,7 @@ defineProps({
     text-decoration: underline;
 }
 
-.linked:hover{
+.linked:hover {
     transform: scale(1.3);
 }
 
@@ -113,5 +113,4 @@ defineProps({
 .link:hover {
     text-decoration: underline;
 }
-
 </style>

@@ -20,7 +20,12 @@
             </div>
         </div>
         <div class="aboutmeContainer">
-            Aman Padda, an engineering student specializing in Deep Machine Learning, combines a passion for technology with a commitment to advancing the field. Known for his rigorous analytical skills and creative problem-solving, Aman excels in collaborative environments and is recognized for his effective communication. He actively participates in volunteer work, enhancing his professional network and community engagement. In his leisure time, Aman pursues innovative projects that apply AI to real-world challenges, demonstrating his dedication to impactful technology.
+            Aman Padda, an engineering student specializing in Deep Machine Learning, combines a passion for technology
+            with a commitment to advancing the field. Known for his rigorous analytical skills and creative
+            problem-solving, Aman excels in collaborative environments and is recognized for his effective
+            communication. He actively participates in volunteer work, enhancing his professional network and community
+            engagement. In his leisure time, Aman pursues innovative projects that apply AI to real-world challenges,
+            demonstrating his dedication to impactful technology.
         </div>
     </div>
 </template>
@@ -83,7 +88,7 @@
     object-fit: cover;
 }
 
-.aboutmeContainer{
+.aboutmeContainer {
     color: white;
     font-size: 18px;
     font-family: "Lora", serif;
@@ -118,14 +123,15 @@
         max-width: 150px;
         max-height: 150px;
     }
-    .aboutmeContainer{
+
+    .aboutmeContainer {
         font-size: 14px;
         animation: slideInFromBottom 1s ease-out forwards;
     }
 }
 
 @media (max-width: 600px) {
-    .aboutmeContainer{
+    .aboutmeContainer {
         font-size: 10px;
     }
 
@@ -143,6 +149,7 @@
         transform: translateX(-100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -154,6 +161,7 @@
         transform: translateX(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -165,10 +173,10 @@
         transform: translateY(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
-
 </style>

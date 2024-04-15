@@ -34,7 +34,6 @@ const shareContent = async () => {
                 text: "Check out Aman Padda's Resume",
                 url: window.location.href
             });
-            console.log('Content shared successfully');
         } catch (error) {
             console.error('Error sharing the content', error);
         }
@@ -45,8 +44,8 @@ const shareContent = async () => {
 
 const downloadPdf = () => {
     const link = document.createElement('a');
-    link.href = 'virtualResume\src\assets\Resume.pdf';
-    link.download = "AmanPaddaResume.pdf"; 
+    link.href = 'Resume.pdf';
+    link.download = "AmanPaddaResume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -54,14 +53,15 @@ const downloadPdf = () => {
 </script>
 
 <style scoped>
-
 .linkMainContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.darkMode, .share, .download {
+.darkMode,
+.share,
+.download {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -72,18 +72,23 @@ const downloadPdf = () => {
     color: var(--textIcon-color);
 }
 
-.darkMode i, .share i, .download i {
+.darkMode i,
+.share i,
+.download i {
     margin-bottom: 4px;
     transition: transform 0.3s;
     color: var(--icon-color);
 }
 
-.darkMode:hover i, .share:hover i, .download:hover i {
+.darkMode:hover i,
+.share:hover i,
+.download:hover i {
     transform: scale(1.5);
 }
 
-.darkMode:hover p, .share:hover p, .download:hover p {
+.darkMode:hover p,
+.share:hover p,
+.download:hover p {
     text-decoration: underline;
 }
-
 </style>

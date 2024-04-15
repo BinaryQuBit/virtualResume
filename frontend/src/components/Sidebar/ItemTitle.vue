@@ -1,7 +1,7 @@
 <template>
     <div class="titleContainer">
         <div class="iconContainer">
-            <i :class="iconSrc"/>
+            <i :class="iconSrc" />
         </div>
         <div class="descriptionContainer">
             {{ titleText }}
@@ -30,7 +30,7 @@ defineProps({
 .iconContainer {
     width: 60px;
     margin-right: 10px;
-} 
+}
 
 .iconContainer i {
     font-size: 42px;
@@ -44,10 +44,8 @@ defineProps({
 }
 
 @media (max-width: 315px) {
-    .descriptionContainer{ 
+    .descriptionContainer {
         font-size: 15px;
     }
 }
-
-
 </style>

@@ -1,24 +1,24 @@
 <template>
     <div class="mainContainer">
-      <div class="employerContainer">
-        <div class="employer">
-          {{ employer }}
+        <div class="employerContainer">
+            <div class="employer">
+                {{ employer }}
+            </div>
+            <a v-if="githubIcon" :href="githubLink" target="_blank" rel="noopener noreferrer" class="githubIcon">
+                <i :class="githubIcon" alt="GitHub Link" />
+            </a>
+            <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer">
+                <i :class="demoIcon" alt="Demo Link" />
+            </a>
         </div>
-        <a v-if="githubIcon" :href="githubLink" target="_blank" rel="noopener noreferrer" class="githubIcon">
-            <i :class="githubIcon" alt="GitHub Link" />
-        </a>
-        <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer">
-          <i :class="demoIcon" alt="Demo Link" />
-        </a>
-      </div>
-      <div class="location">
-        {{ location }}
-      </div>
-      <div class="date">
-        {{ date }}
-      </div>
+        <div class="location">
+            {{ location }}
+        </div>
+        <div class="date">
+            {{ date }}
+        </div>
     </div>
-  </template>
+</template>
 
 <script setup lang="ts">
 import { defineProps } from "vue";
@@ -61,7 +61,7 @@ i {
     transition: transform 0.3s;
 }
 
-i:hover{
+i:hover {
     transform: scale(1.3);
 }
 
@@ -99,10 +99,10 @@ i:hover{
 
 @media (max-width: 600px) {
 
-    .employer
-    {
+    .employer {
         font-size: 16px;
     }
+
     .location,
     .date {
         font-size: 12px;

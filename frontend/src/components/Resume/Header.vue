@@ -1,10 +1,10 @@
 <template>
     <div class="mainContainer">
         <div class="iconContainer">
-            <i :class="iconSrc"/>
+            <i :class="iconSrc" />
         </div>
         <div class="titleContainer">
-            {{titleText}}
+            {{ titleText }}
         </div>
     </div>
 </template>
@@ -20,18 +20,18 @@ defineProps({
 </script>
 
 <style scoped>
-.mainContainer{
+.mainContainer {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.iconContainer{
+.iconContainer {
     width: 60px;
     margin-right: 10px;
 }
 
-.titleContainer{
+.titleContainer {
     font-family: "Lora", serif;
     font-weight: 900;
     font-size: 18px;
@@ -43,9 +43,8 @@ defineProps({
 }
 
 @media (max-width: 315px) {
-    .titleContainer{ 
+    .titleContainer {
         font-size: 15px;
     }
 }
-
 </style>

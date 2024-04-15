@@ -36,4 +36,3 @@ defineProps({
     padding-right: 10px;
 }
 </style>
-
