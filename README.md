@@ -1,9 +1,9 @@
-<div style="width: 100%;">
-    <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
+<div align="center" style="width: 100%">
+    <h2>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h2>
 </div>
 
-<div align="center" style="width: 100%">
-    Check out my <a href="https://amanpadda.uk.to/">Resume</a>
+<div style="width: 100%;">
+    <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
 </div>
 
 <div style="width: 100%;">
