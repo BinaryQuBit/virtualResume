@@ -1,5 +1,5 @@
 <div align="center" style="width: 100%">
-    <h2>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h2>
+    <h2>Check out my <a href="https://amanpadda.uk.to/" target="_blank">Resume</a></h2>
 </div>
 
 <div style="width: 100%;">
