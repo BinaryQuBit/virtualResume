@@ -28,7 +28,17 @@ defineProps({
 
 .iconContainer {
     width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
+}
+
+.iconContainer i {
+    font-size: 42px;
+    display: block;
+    height: 100%;
 }
 
 .titleContainer {
@@ -36,10 +46,6 @@ defineProps({
     font-weight: 900;
     font-size: 18px;
     margin-left: 10px;
-}
-
-.iconContainer i {
-    font-size: 42px;
 }
 
 @media (max-width: 315px) {

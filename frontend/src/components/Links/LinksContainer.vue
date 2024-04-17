@@ -1,14 +1,14 @@
 <template>
     <div class="linkMainContainer">
-        <div class="darkMode" @click="toggleDarkMode">
+        <div class="darkMode" @click="toggleDarkMode" :title="globalState?.darkMode ? 'Enable Light Mode' : 'Enable Dark Mode'">
             <i :class="globalState?.darkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
             <p>{{ globalState?.darkMode ? "Light Mode" : "Dark Mode" }}</p>
         </div>
-        <div class="share" @click="shareContent">
+        <div class="share" @click="shareContent" title="Share My Resume">
             <i class="fas fa-share-alt"></i>
             <p>Share</p>
         </div>
-        <div class="download" @click="downloadPdf">
+        <div class="download" @click="downloadPdf" title="Download My Resume">
             <i class="fas fa-download"></i>
             <p>Download</p>
         </div>
@@ -92,7 +92,7 @@ const downloadPdf = () => {
     text-decoration: underline;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
 
     .darkMode,
     .share,

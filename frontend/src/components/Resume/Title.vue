@@ -1,18 +1,20 @@
 <template>
-    <div class="mainContainer">
-        <div class="employerContainer">
-            <div class="employer">
-                {{ employer }}
+    <div class="flexContainer">
+        <div class="mainContainer">
+            <div class="employerContainer">
+                <div class="employer">
+                    {{ employer }}
+                </div>
+                <a v-if="githubIcon" :href="githubLink" target="_blank" rel="noopener noreferrer" class="githubIcon" title="View GitHub Repository">
+                    <i :class="githubIcon" alt="GitHub Link" />
+                </a>
+                <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer" title="View Live Demo">
+                    <i :class="demoIcon" alt="Demo Link" />
+                </a>
             </div>
-            <a v-if="githubIcon" :href="githubLink" target="_blank" rel="noopener noreferrer" class="githubIcon">
-                <i :class="githubIcon" alt="GitHub Link" />
-            </a>
-            <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer">
-                <i :class="demoIcon" alt="Demo Link" />
-            </a>
-        </div>
-        <div class="location">
-            {{ location }}
+            <div class="location">
+                {{ location }}
+            </div>
         </div>
         <div class="date">
             {{ date }}
@@ -36,12 +38,15 @@ defineProps({
 </script>
 
 <style scoped>
-.mainContainer {
+.flexContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--title-color);
     padding: 10px;
+}
+.mainContainer {
+    display: block;
 }
 
 .employerContainer {
@@ -80,24 +85,9 @@ i:hover {
     font-family: "Lora", serif;
     font-weight: 600;
     font-size: 16px;
-    margin-left: 10px;
 }
 
-@media (max-width: 750px) {
-    .mainContainer {
-        display: block;
-    }
-
-    .employer {
-        margin-left: 0px;
-    }
-
-    .date {
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 580px) {
 
     .employer {
         font-size: 16px;
@@ -106,6 +96,12 @@ i:hover {
     .location,
     .date {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .flexContainer {
+        display: block;
     }
 }
 </style>

@@ -20,6 +20,7 @@ defineProps({
     margin-left: 20px;
     font-family: "Lora", serif;
     margin-top: 10px;
+    margin-right: 20px
 }
 
 .mainContainer ul {

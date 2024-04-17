@@ -45,6 +45,12 @@
     background-attachment: fixed;
 }
 
+@media only screen and (max-width: 1024px) {
+    .bg {
+        background-attachment: scroll;
+    }
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -101,7 +107,7 @@
     animation: slideInFromBottom 1s ease-out forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     .container {
         flex-direction: column;
     }
@@ -123,16 +129,11 @@
         max-width: 150px;
         max-height: 150px;
     }
-
-    .aboutmeContainer {
-        font-size: 14px;
-        animation: slideInFromBottom 1s ease-out forwards;
-    }
 }
 
 @media (max-width: 600px) {
     .aboutmeContainer {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .titleBox {
@@ -140,7 +141,7 @@
     }
 
     .descriptionBox {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 

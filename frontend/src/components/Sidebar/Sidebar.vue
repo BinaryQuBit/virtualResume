@@ -136,7 +136,7 @@ onUnmounted(() => {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
     .leftContainer {
         position: none;
         width: 100%;
