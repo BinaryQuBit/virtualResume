@@ -41,6 +41,7 @@
           font-family: "Open Sans", sans-serif;
           text-align: center;
           display: block;
+          text-transform: uppercase;
         }
 
         h1 a span {
