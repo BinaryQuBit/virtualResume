@@ -131,23 +131,14 @@
           100% { transform: translateX(0); }
         }
 
-        @keyframes fade {
-          0%, 75% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-
         @media (prefers-color-scheme: light) {
           .body {
             background-image: radial-gradient(#9B5DE5, #F15BB5, #00BBF9);
           }
-          ul li {
-            color: #00BBF9;
+          ul li, ul li a {
+            color: #00BBF9;  /* Ensure all text colors change accordingly */
           }
-          ul li a {
-            color: #00BBF9;
-          }
-          ul li a:hover,
-          ul li a:focus {
+          ul li a:hover, ul li a:focus {
             color: #F15BB5;
           }
         }
