@@ -9,20 +9,21 @@
         text-decoration: none;
         list-style: none;
         outline: none;
-        <!-- box-sizing: border-box; -->
+        box-sizing: border-box;
       }
 
       .body {
         height: 50px;
         width: 100%;
-        <!-- display: flex;
-        align-items: center;
-        justify-content: center; -->
+        display: block;
+        align-items: top;
+        justify-content: top;
         background-image: radial-gradient(#ff9b71, #ff4444, #e8e677);
         animation: border 5s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
-        <!-- border: 24px solid #0d1117; -->
+        border-left: 24px solid #0d1117;
+        border-right: 24px solid #0d1117;
       }
 
       .container {
@@ -59,7 +60,7 @@
       }
 
       h1 a span:nth-child(1) em {
-        margin-top: 28px;
+        margin-top: 20px;
         line-height: 0rem;
         margin-bottom: -2px;
       }
