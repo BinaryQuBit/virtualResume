@@ -1,11 +1,18 @@
-<div align="center" style="width: 100%">
-    <h3>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h3>
+<div style="width: 100%;">
+    <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
+</div>
+
+<br>
+<br>
+
+<div style="width: 100%;">
+    <a href="#"><img src="./readmeSetup/demo.svg" style="width: 100%"></a>
 </div>
 
 <br>
 
-<div style="width: 100%;">
-    <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
+<div align="center" style="width: 100%;">
+    <a href="https://amanpadda.uk.to"><img src="./readmeSetup/demo.gif" style="width: 100%">Final Product</a>
 </div>
 
 <br>
