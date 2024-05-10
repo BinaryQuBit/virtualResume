@@ -6,6 +6,8 @@
     <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
 </div>
 
+<br>
+
 <div style="width: 100%;">
     <a href="#"><img src="./readmeSetup/techStack.svg" style="width: 100%"></a>
 </div>
