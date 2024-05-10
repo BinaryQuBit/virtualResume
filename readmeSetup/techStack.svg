@@ -61,14 +61,10 @@
           100% { transform: translateX(0); }
         }
       </style>
-      <div class='body'>
-        <div class='container'>
-          <h1>
-            <span><em>tech stack</em></span>
-            <span><em>tech stack</em></span>
-          </h1>
-        </div>
-      </div>
+      <h1>
+        <span><em>tech stack</em></span>
+        <span><em>tech stack</em></span>
+      </h1>
     </div>
   </foreignObject>
   <rect x="0" y="22" width="100%" height="3" fill="url(#underlineGradient)" />
