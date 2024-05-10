@@ -2,6 +2,8 @@
     <h3>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h3>
 </div>
 
+<br>
+
 <div style="width: 100%;">
     <a href="#"><img src="./readmeSetup//welcome.svg" style="width: 100%"></a>
 </div>
