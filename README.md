@@ -1,5 +1,5 @@
 <div align="center" style="width: 100%">
-    <h2>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h2>
+    <h3>Check out my <a href="https://amanpadda.uk.to/">Resume</a></h3>
 </div>
 
 <div style="width: 100%;">
@@ -64,5 +64,3 @@
 <p align="center">
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
 </p>
-
-<h2></h2>
