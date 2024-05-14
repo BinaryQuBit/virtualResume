@@ -22,7 +22,7 @@
     <a href="#"><img src="./readmeSetup/techStack.svg" style="width: 100%"></a>
 </div>
 
-<h3 align = "center">Languages</h3>
+<h3 align = "center">👩‍💻 Languages</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
@@ -33,15 +33,14 @@
 
 <h2></h2>
 
-<h3 align="center">Development Tools & Environments</h3>
+<h3 align="center">🚀 Development Tools & Environments</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi">
 </p>
 
 <h2></h2>
 
-<h3 align="center">Web Development Frameworks & Libraries</h3>
+<h3 align="center">💻 Web Development Frameworks & Libraries</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" alt="NPM">
   <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
@@ -54,14 +53,14 @@
 
 <h2></h2>
 
-<h3 align="center">Databases</h3>
+<h3 align="center">⚡ Databases</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white" alt="Firebase">
 </p>
 
 <h2></h2>
 
-<h3 align="center">Web Servers</h3>
+<h3 align="center">🌐 Web Servers</h3>
 <p align="center"">
   <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx">
   <img src="https://img.shields.io/badge/Casa%20OS-%234285F4.svg?style=for-the-badge&logoColor=white" alt="Casa OS">
@@ -69,7 +68,14 @@
 
 <h2></h2>
 
-<h3 align="center">3D Modeling and Animation Softwares</h3>
+<h3 align="center">💡 3D Modeling and Animation Softwares</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+</p>
+
+<h2></h2>
+
+<h3 align="center">⚙️ Hardware and Microcontroller Boards</h3>
+<p align="center">
+  <img src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" alt="Raspberry Pi">
 </p>
