@@ -79,15 +79,12 @@
           flex-direction: column;
         }
 
-        ul {
+        .items p {
           font-size: 14px;
           line-height: 26px;
           color: #9e3ffd;
           font-weight: 700;
           font-family: "Open Sans", sans-serif;
-        }
-
-        ul li {
           display: flex;
           letter-spacing: 0.125vw;
         }
@@ -98,12 +95,8 @@
         <span><em>virtual resume</em></span>
       </h1>
       <section class='items'>
-        <ul>
-          <li>Virtual Resume is built to highlight</li>
-        </ul>
-        <ul>
-          <li>the work experience and projects</li>
-        </ul>
+        <p>Virtual Resume is built to highlight</p>
+        <p>the work experience and projects</p>
       </section>
     </div>
   </foreignObject>
