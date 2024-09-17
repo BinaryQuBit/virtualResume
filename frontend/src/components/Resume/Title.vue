@@ -8,7 +8,7 @@
                 <a v-if="githubIcon" :href="githubLink" target="_blank" rel="noopener noreferrer" class="githubIcon" title="View GitHub Repository">
                     <i :class="githubIcon" alt="GitHub Link" />
                 </a>
-                <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer" title="View Live Demo">
+                <a v-if="demoIcon" :href="demoLink" target="_blank" rel="noopener noreferrer" class="demoIcon" title="View Live Demo">
                     <i :class="demoIcon" alt="Demo Link" />
                 </a>
             </div>
@@ -71,6 +71,10 @@ i:hover {
 }
 
 .githubIcon {
+    margin-left: 10px;
+}
+
+.demoIcon {
     margin-left: 10px;
     margin-right: 10px;
 }

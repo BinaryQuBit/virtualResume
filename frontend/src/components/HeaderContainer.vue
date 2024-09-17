@@ -9,13 +9,7 @@
                     AMAN PADDA
                 </div>
                 <div class="descriptionBox">
-                    Final Semester of a Bachelor's in Software Engineering,
-                </div>
-                <div class="descriptionBox">
-                    with an expected graduation date of
-                </div>
-                <div class="descriptionBox">
-                    August 2024
+                    Bachelor's in Software Engineering
                 </div>
             </div>
         </div>

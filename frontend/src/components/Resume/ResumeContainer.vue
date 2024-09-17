@@ -1,40 +1,55 @@
 <template>
     <div>
         <Header :iconSrc="'fa-solid fa-terminal'" titleText="EMPLOYMENT HISTORY" />
+        
         <div class="margin" :class="{ 'fade-in': isVisible1 }">
-            <Title :githubIcon="'fa-brands fa-github'" :demoIcon="'fa-solid fa-display'" :githubLink="skcdaGithubUrl"
-                :demoLink="skcdaDemoUrl" employer="Full Stack Developer" location="SKCDA, Regina, SK"
-                date="May 2023 - Aug 2023" />
+            <Title :demoIcon="'fa-solid fa-display'"
+                :demoLink="stardustSoftwareSolutionUrl" employer="Founder & CEO" location="Stardust Software Solutions, Calgary, AB"
+                date="Aug 2024 - Present" />
             <Description
-                list="Spearheaded the development and launch of a dynamic WordPress website, employing Agile methodologies to ensure project flexibility and responsiveness to feedback" />
+                list="Spearheaded the development and delivery of 6 custom software solutions for businesses across various industries, specializing in web and mobile applications" />
             <Description
-                list="Implemented a fast feedback cycle, enabling continuous improvement and rapid iteration of the website based on user input and stakeholder reviews" />
+                list="Designed and implemented scalable software architectures using modern technologies, resulting in solutions that support up to 1,000 concurrent users" />
             <Description
-                list="Utilized WordPress as the primary platform, leveraging its flexibility and extensive plugin ecosystem to build a tailored, dynamic website solution" />
-            <Description list="Technologies used: WordPress, JavaScript, Figma, StoriesOnboard, GreenGeeks" isStar />
+                list="Oversaw all stages of the software development lifecycle, from initial client consultations and project planning to deployment and post-launch support" />
+            <Description 
+                list="Cultivated strong client relationships, achieving a 100% client retention rate and securing long-term contracts for continuous collaboration" />
+            <Description list="Technologies used: WordPress, React/Native, JavaScript, Figma, StoriesOnboard" isStar />
         </div>
         <div class="margin" :class="{ 'fade-in': isVisible2 }">
+            <Title :githubIcon="'fa-brands fa-github'" :demoIcon="'fa-solid fa-display'" :githubLink="skcdaGithubUrl"
+                :demoLink="skcdaDemoUrl" employer="Full Stack Developer" location="Saskatchewan Career Development Association, Regina, SK"
+                date="May 2023 - Aug 2023" />
+            <Description
+                list="Led a team of 3 members in designing and prototyping a web application for a client and subsequently single-handedly built and deployed the live version" />
+            <Description
+                list="Executed a content migration process, transferring over 50 selected pages and blogs from Weebly to GreenGeeks hosting platform, resulting in easier to find and manageable content" />
+            <Description
+                list="Implemented essential features such as secure credit card payment processing and optimized form registrations, resulting in easier membership renewal and enrollment processing time for over 100 members" />
+            <Description list="Technologies used: WordPress, JavaScript, Figma, StoriesOnboard, GreenGeeks" isStar />
+        </div>
+        <div class="margin" :class="{ 'fade-in': isVisible3 }">
             <Title :githubIcon="'fa-brands fa-github'" :githubLink="codeGeneratorUrl" employer="Research Assistant"
                 location="University of Regina" date="July 2023 - Aug 2023" />
             <Description
-                list=" Collaborated with a PhD student to scrape and preprocess erroneous code samples from chat-based platforms, creating a robust dataset for training a machine learning model" />
+                list="Proposed the concept of generating datasets by utilizing another Large Language Model, Chat-GPT, resulting in an increase in data sample generation efficiency" />
             <Description
-                list="Supported the development of an innovative machine learning model designed to identify and categorize syntax and semantic errors in code, enhancing traditional error detection methods beyond standard compiler diagnostics" />
+                list="Collaborated with a PhD student to scrape and preprocess erroneous code samples from Chat-GPT, resulting in a dataset expansion of 50 percent compared to initial projection" />
             <Description
-                list="Contributed to a pioneering approach in error detection by training a machine learning model that successfully identifies various code errors, offering a more efficient alternative to conventional compiler-based error analysis" />
+                list="Integrated JavaScript and Node.js technologies into the API for efficient tokenization of previous chat history, enhancing the model’s capability to prevent duplicate code generation, resulting in a decrease in redundant code occurrences within the dataset" />
             <Description list="Technologies used: Node.js, JavaScript" isStar />
         </div>
-        <div class="margin" :class="{ 'fade-in': isVisible3 }">
-            <Title employer="IT Operations Intern" location="SGI, Saskatoon, SK" date="Jan 2022 – Aug 2022" />
+        <div class="margin" :class="{ 'fade-in': isVisible4 }">
+            <Title employer="Information Technology Operations Intern" location="SGI, Saskatoon, SK" date="Jan 2022 – Aug 2022" />
             <Description
-                list="Proactively resolved daily incidents and requests, enhancing system reliability and user satisfaction across various IT environments" />
+                list="Identified and resolved a critical blue screen of death issue affecting multiple members across the organization, demonstrating problem-solving skills and technical expertise" />
             <Description
-                list="Administered dynamic and static groups for users and devices in Azure cloud, and monitored access to licenses and applications, ensuring optimal deployment and compliance with usage policies" />
+                list="Responded effectively to a disaster scenario by setting up infrastructure outside for salvage operations, enabling inspection activities to proceed smoothly, and ensuring minimal disruption to operations during crisis situations" />
             <Description
-                list="Led the successful transformation of MDM profiles from JAMF to Azure, and resolved a critical, widespread issue affecting multiple devices, documented procedures that improved future troubleshooting efforts" />
+                list="Managed daily tasks such as packaging applications and overseeing Azure controls, contributing to the smooth functioning of IT operations and maintaining the efficiency of cloud-based services" />
             <Description list="Technologies used: Azure, PuTTY, SNOW" isStar />
         </div>
-        <div class="margin" :class="{ 'fade-in': isVisible4 }">
+        <div class="margin" :class="{ 'fade-in': isVisible5 }">
             <Title employer="Asset Manager/Sales Associate" location="Footlocker, Calgary, AB"
                 date="June 2016 – Aug 2022" />
             <Description
@@ -44,7 +59,7 @@
             <Description
                 list="Accurately predicted future inventory needs, effectively minimizing labor costs and optimizing resource allocation in line with anticipated stock shipments" />
         </div>
-        <div class="margin" :class="{ 'fade-in': isVisible5 }">
+        <div class="margin" :class="{ 'fade-in': isVisible6 }">
             <Title employer="CEO" location="Ultimate Taekwondo, Calgary, AB" date="Jan 2018 – Dec 2021" />
             <Description
                 list="Maintained a pivotal leadership role by directing instructors to fulfill their duties effectively on-site, ensuring adherence to organizational standards and enhancing operational efficiency" />
@@ -74,12 +89,14 @@ const skcdaGithubUrl =
     "https://github.com/BinaryQuBit/SKCDA---Webpage---Design";
 const skcdaDemoUrl = "https://www.skcda.ca/";
 const codeGeneratorUrl = "https://github.com/BinaryQuBit/CodeGenerator";
+const stardustSoftwareSolutionUrl = "https://stardustsolution.com/"
 
 const isVisible1 = ref(false);
 const isVisible2 = ref(false);
 const isVisible3 = ref(false);
 const isVisible4 = ref(false);
 const isVisible5 = ref(false);
+const isVisible6 = ref(false);
 
 const offset = 100;
 
@@ -103,6 +120,9 @@ function handleScroll() {
                     break;
                 case 4:
                     isVisible5.value = true;
+                    break;
+                case 5:
+                    isVisible6.value = true;
                     break;
             }
         }
